@@ -25,5 +25,9 @@ sudo docker run -d \
 	--name steampixel-tor-hidden-service \
 	steampixel:tor-hidden-service
 
+# Give the services some time to spin up
+sleep 5
+
 # Show the onion domain
+echo 'Open Tor and navigate to: '
 sudo cat hidden-service-dir/hostname

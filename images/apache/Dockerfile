@@ -35,7 +35,6 @@ RUN { \
 	echo 'register_globals = Off'; \
 	echo 'allow_url_fopen = Off'; \
 	echo 'safe_mode_allowed_env_vars = PHP_'; \
-	echo 'safe_mode = On'; \
 	echo 'sql.safe_mode = On'; \
 	echo 'disable_functions = phpinfo,mail,exec,passthru,shell_exec,system,proc_open,popen,curl_exec,curl_multi_exec,parse_ini_file,show_source'; \
 } > /usr/local/etc/php/conf.d/hidden.ini
