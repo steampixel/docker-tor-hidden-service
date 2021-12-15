@@ -15,6 +15,7 @@ sudo chmod -R 700 hidden-service-dir
 # Note: Do not expose any ports here! We dont want this contents to be exposed by a second host!
 sudo docker run -d \
 	-v `pwd`/html:/var/www/html \
+	-v `pwd`/my-httpd.conf:/usr/local/apache2/conf/httpd.conf \
 	--name steampixel-apache-php \
 	steampixel:apache-php
 

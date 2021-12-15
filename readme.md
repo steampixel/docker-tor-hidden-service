@@ -30,3 +30,9 @@ I have done some basic security hardening to avoid exposing information about yo
 * Diabled PHP file uploads
 * Disabled PHPs URL opening feature
 * Disabled some critical PHP functions like system, exec, mail or phpinfo
+* Do not allow frame embed to avoid clickjacking
+* Do not allow older browsers to interpret this contentes as other mime types
+
+## Static hosting optimizations
+* Set different expire times my mime type
+* Enabled deflate
