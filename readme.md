@@ -34,5 +34,5 @@ I have done some basic security hardening to avoid exposing information about yo
 * Do not allow older browsers to interpret this contentes as other mime types
 
 ## Static hosting optimizations
-* Set different expire times my mime type
+* Set different expire times for mime types
 * Enabled deflate
