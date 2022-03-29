@@ -7,7 +7,7 @@ Hey! This is a simple Tor hidden service setup! Use Docker to spin up a hidden T
 3. Start the service with "sudo ./docker-run.sh"
 4. Copy your generated onion domain from the terminal and past it into the tor browser
 
-## Stop the servie
+## Stop the service
 Stop the service with "sudo ./docker-rm.sh"
 After the services was stopped all logs will get written to the logs folder.
 
