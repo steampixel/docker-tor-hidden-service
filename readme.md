@@ -27,7 +27,7 @@ I have done some basic security hardening to avoid exposing information about yo
 * Disabled Apaches info and status mods
 * Disabled Apaches server signatures
 * Limited critical PHP resources like execution time and input memory
-* Diabled PHP file uploads
+* Disabled PHP file uploads
 * Disabled PHPs URL opening feature
 * Disabled some critical PHP functions like system, exec, mail or phpinfo
 * Do not allow frame embed to avoid clickjacking
@@ -39,5 +39,5 @@ I have done some basic security hardening to avoid exposing information about yo
 * Limit containers compute resources
 
 ## Static hosting optimizations
-* Set different expire times my mime type
+* Set different expire times for mime types
 * Enabled deflate
