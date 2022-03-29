@@ -32,6 +32,11 @@ I have done some basic security hardening to avoid exposing information about yo
 * Disabled some critical PHP functions like system, exec, mail or phpinfo
 * Do not allow frame embed to avoid clickjacking
 * Do not allow older browsers to interpret this contentes as other mime types
+* PHP Container does not use the root user internally
+* The PHP Container is read only
+* Dropped all capabilities from the containers
+* Prevent the application processes inside the container from gaining new privileges during execution
+* Limit containers compute resources
 
 ## Static hosting optimizations
 * Set different expire times my mime type

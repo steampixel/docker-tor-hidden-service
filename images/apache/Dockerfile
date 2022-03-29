@@ -38,3 +38,9 @@ RUN { \
 	echo 'sql.safe_mode = On'; \
 	echo 'disable_functions = phpinfo,mail,exec,passthru,shell_exec,system,proc_open,popen,curl_exec,curl_multi_exec,parse_ini_file,show_source'; \
 } > /usr/local/etc/php/conf.d/hidden.ini
+
+# Do not use the root user
+# Instead use another user for the RUN command
+RUN useradd -ms /bin/bash steampixel
+USER steampixel
+WORKDIR /home/steampixel
